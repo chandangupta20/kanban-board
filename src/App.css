@@ -1,38 +1,34 @@
-.App {
+/* Root Container */
+#root {
+  max-width: 1280px;
+  margin: 0 auto;
+  padding: 1rem;
+  font-family: "Roboto", sans-serif;
+  background-color: #f8f9fb;
+}
+
+.App h1 {
+  font-size: 2.5rem;
+  color: #2d3748;
+  margin-bottom: 2rem;
+  font-weight: 700;
   text-align: center;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+/* Example button with more precise styling */
+.button {
+  background-color: #4a90e2; /* Verify this color in your design */
+  color: #ffffff; /* Verify this color */
+  padding: 10px 15px; /* Match padding exactly */
+  border-radius: 5px; /* Adjust radius as needed */
+  font-size: 16px; /* Match font size */
+  font-family: "Roboto", sans-serif; /* Use the specific font */
+  font-weight: 600;
+  box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.2); /* Add shadow if needed */
+  transition: background-color 0.3s ease;
+  cursor: pointer;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
-}
-
-.App-link {
-  color: #61dafb;
-}
-
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.button:hover {
+  background-color: #3a78c0; /* Verify hover color */
 }
